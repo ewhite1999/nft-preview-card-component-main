@@ -72,7 +72,7 @@ The main things I learnt/had to look up in this project are:
 }
 ```
 
-- How to overlay a colour on an image when overed:
+- How to overlay a colour on an image when hovered:
 
 ```css
 .img_container {
