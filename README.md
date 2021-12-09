@@ -56,7 +56,7 @@ The main things I learnt/had to look up in this project are:
 }
 ```
 
-- How to center an image without absolute positioning:
+- How to center an image with absolute positioning:
 
 ```css
 .container {
