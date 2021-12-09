@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+:root {
+  --main_background: hsl(217, 54%, 11%);
+  --card_background: hsl(216, 50%, 16%);
+  --line_colour: hsl(215, 32%, 27%);
+  --title_colour: white;
+  --text_body: hsl(215, 51%, 70%);
+  --eth_colour: hsl(178, 100%, 50%);
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--main_background);
+}
+
+.card {
+  background-color: var(--card_background);
+  color: var(--text_body);
+  font-weight: 300;
+  width: 320px;
+  margin: 5em auto;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 1.5em;
+  font-weight: lighter;
+}
+
+.title,
+#link_to_creator {
+  color: var(--title_colour);
+  text-decoration: none;
+}
+
+.description {
+  line-height: 1.875rem;
+}
+
+.img_cont img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.title {
+  font-size: 1.375rem;
+}
+.price {
+  color: var(--eth_colour);
+}
+.time {
+  margin-left: auto;
+}
+.time,
+.price,
+.across {
+  display: flex;
+  align-items: center;
+}
+
+#creator > img {
+  max-height: 32px;
+  margin-right: 1em;
+  border: 1px white solid;
+  border-radius: 100%;
+}
+
+.across img {
+  margin-right: 0.4em;
+}
+
+hr {
+  color: var(--line_colour);
+  font-size: 0.5rem;
+  margin: 2em 0;
+}
