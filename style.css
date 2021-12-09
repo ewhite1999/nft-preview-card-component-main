@@ -23,7 +23,7 @@
   color: var(--text_body);
   font-weight: 300;
   width: 320px;
-  margin: 5em auto;
+  margin: 5em auto 2em auto;
   border-radius: 15px;
   overflow: hidden;
   padding: 1.5em;
@@ -40,12 +40,40 @@
   line-height: 1.875rem;
 }
 
+.img_cont {
+  position: relative;
+  background-color: var(--eth_colour);
+  display: inline-block;
+  line-height: 0;
+  border-radius: 13px;
+}
 .img_cont img {
   max-width: 100%;
   border-radius: 10px;
 }
+.img_cont img:hover {
+  opacity: 0.5;
+}
+.hover_img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+}
+.img_cont:hover .hover_img {
+  opacity: 1;
+}
+
 .title {
   font-size: 1.375rem;
+  width: fit-content;
+}
+.title:hover {
+  color: var(--eth_colour);
+  cursor: pointer;
 }
 .price {
   color: var(--eth_colour);
@@ -66,7 +94,9 @@
   border: 1px white solid;
   border-radius: 100%;
 }
-
+#creator a:hover {
+  color: var(--eth_colour);
+}
 .across img {
   margin-right: 0.4em;
 }
