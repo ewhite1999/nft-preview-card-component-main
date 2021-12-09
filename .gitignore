@@ -16,3 +16,4 @@
 .prettierignore
 # ignore the readme until published
 *.md
+/.vscode
